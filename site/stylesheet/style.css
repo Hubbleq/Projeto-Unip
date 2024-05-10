@@ -124,7 +124,7 @@ html {
 .home {
     display: flex;
     background-image: 
-url('https://fia.com.br/wp-content/uploads/2022/06/energia-sustentavel-o-que-e-importancia-tipos.jpg');
+url('https://i2.wp.com/nerdizmo.uai.com.br/wp-content/uploads/sites/29/2020/06/Wallpaper-Minimalista-GEEKNESS-50-scaled.jpg?w=2560&ssl=1');
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -248,7 +248,7 @@ url('https://fia.com.br/wp-content/uploads/2022/06/energia-sustentavel-o-que-e-i
 
 .services .title:after {
     background: #111;
-    content: "What i provide";
+    content: "Tipos de Energias Sustentáveis";
 
 }
 
@@ -293,7 +293,7 @@ url('https://fia.com.br/wp-content/uploads/2022/06/energia-sustentavel-o-que-e-i
 
 /* Sessão de Contatos */
 .contact .title::after {
-    content: "get in touch";
+    content: "Fique atento";
 }
 
 .contact .contact-content .column {
@@ -701,4 +701,129 @@ footer {
     .contact .title::after {
         font-size: 15px;
     }
+}
+/* Estilos para o corpo do documento */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+.max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para a seção de tipos de energia */
+.tipos {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+.tipos h2 {
+    color: #333;
+}
+
+.tipos p {
+    color: #666;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilos para o link de volta */
+.back-link {
+    color: #fff; 
+    text-decoration: none; 
+    padding: 10px; 
+    display: flex;
+    align-items: space-between; 
+    margin-left: 70px;
+    transition: color 0.3s; 
+}
+
+.back-link:hover {
+    color: #ccc; 
+}
+
+/* Adicionando estilos para as abas */
+.tab-btn {
+    background-color: #f4f4f4;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-btn.active {
+    background-color: #ddd;
+}
+
+.tab-content {
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Estilizando as listas de vantagens e desvantagens */
+.tab-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tab-content ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilizando cabeçalhos de vantagens e desvantagens */
+.tab-content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para as abas */
+.tab-btn {
+    background-color: #f4f4f4;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-btn.active {
+    background-color: #ddd;
+}
+
+.tab-content {
+    display: none;
+    transition: opacity 0.3s ease; /* Transição de opacidade para o conteúdo das abas */
+}
+
+.tab-content.active {
+    display: block;
+    opacity: 1; /* Exibir conteúdo quando ativo */
 }
