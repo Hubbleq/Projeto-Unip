@@ -827,3 +827,32 @@ footer {
     display: block;
     opacity: 1; /* Exibir conteúdo quando ativo */
 }
+
+.energy-image {
+    float: right;
+    width: 60%; /* Ajuste o tamanho da imagem conforme necessário */
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .energy-image {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.energy-image2 {
+    float: right;
+    width: 50%; /* Ajuste o tamanho da imagem conforme necessário */
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .energy-image {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
