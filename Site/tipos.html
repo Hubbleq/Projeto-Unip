@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Energia</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="stylesheet/buttons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="back-link">&larr; Home</a>
+    </header>
+    
+
+    <main>
+        <section class="tipos">
+            <div class="max-width">
+                <h2>Tipos de Energia</h2>
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="solar">Solar</button>
+                    <button class="tab-btn" data-tab="eolica">Eólica</button>
+                    <button class="tab-btn" data-tab="hidreletrica">Hidrelétrica</button>
+                </div>
+                <div id="solar" class="tab-content active">
+                    <img src="images/energia-solar.jpg" alt="Energia Solar" class="energy-image">
+
+                    
+                    <h3>Vantagens da Energia Solar</h3>
+                    <table class="advantages">
+                        <tr>
+                            <td>Vasta disponibilidade de energia gratuita</td>
+                        </tr>
+                        <tr>
+                            <td>Redução das emissões de carbono</td>
+                        </tr>
+                        <tr>
+                            <td>Independência energética</td>
+                        </tr>
+                        <tr>
+                            <td>Manutenção relativamente baixa</td>
+                        </tr>
+                        <tr>
+                            <td>Longa vida útil dos painéis solares</td>
+                        </tr>
+                    </table>
+                    <h3>Desvantagens da Energia Solar</h3>
+                    <table class="disadvantages">
+                        <tr>
+                            <td>Custo inicial de instalação</td>
+                        </tr>
+                        <tr>
+                            <td>Dependência das condições climáticas</td>
+                        </tr>
+                        <tr>
+                            <td>Necessidade de espaço para instalação</td>
+                        </tr>
+                        <tr>
+                            <td>Armazenamento de energia pode ser caro</td>
+                        </tr>
+                        <tr>
+                            <td>Impacto ambiental da produção de painéis solares</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="eolica" class="tab-content" style="display: none;">
+                    <img src="images/energia-eolica.png" alt="Energia Eólica" class="energy-image2"
+                    <h3>Vantagens da Energia Eólica</h3>
+                    <table class="advantages">
+                        <tr>
+                            <td>Fonte de energia renovável</td>
+                        </tr>
+                        <tr>
+                            <td>Redução das emissões de carbono</td>
+                        </tr>
+                        <tr>
+                            <td>Área pequena de instalação</td>
+                        </tr>
+                        <tr>
+                            <td>Baixo custo de manutenção</td>
+                        </tr>
+                        <tr>
+                            <td>Contribuição para a economia local</td>
+                        </tr>
+                    </table>
+                    <h3>Desvantagens da Energia Eólica</h3>
+                    <table class="disadvantages">
+                        <tr>
+                            <td>Impacto visual e sonoro</td>
+                        </tr>
+                        <tr>
+                            <td>Dependência das condições do vento</td>
+                        </tr>
+                        <tr>
+                            <td>Interferência na vida selvagem</td>
+                        </tr>
+                        <tr>
+                            <td>Custo inicial de instalação</td>
+                        </tr>
+                        <tr>
+                            <td>Problemas de localização (melhores áreas ventosas são geralmente remotas)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="hidreletrica" class="tab-content" style="display: none;">
+                    <h3>Vantagens da Energia Hidrelétrica</h3>
+                  <img src="images/hidroelétricas.jpeg"  alt="Hidrelétrica" class="energy-image3"
+                    <table class="advantages">
+                        <tr>
+                            <td>Fonte de energia renovável</td>
+                        </tr>
+                        <tr>
+                            <td>Produção de energia constante</td>
+                        </tr>
+                        <tr>
+                            <td>Controle de enchentes</td>
+                        </tr>
+                        <tr>
+                            <td>Água utilizada para múltiplos propósitos (irrigação, navegação, etc.)</td>
+                        </tr>
+                        <tr>
+                            <td>Longa vida útil das usinas hidrelétricas</td>
+                        </tr>
+                    </table>
+                    <h3>Desvantagens da Energia Hidrelétrica</h3>
+                    <table class="disadvantages">
+                        <tr>
+                            <td>Impacto ambiental e social</td>
+                        </tr>
+                        <tr>
+                            <td>Perda de habitats aquáticos</td>
+                        </tr>
+                        <tr>
+                            <td>Alteração no fluxo dos rios</td>
+                        </tr>
+                        <tr>
+                            <td>Custo inicial e tempo de construção elevados</td>
+                        </tr>
+                        <tr>
+                            <td>Riscos de deslizamentos de terra e terremotos (em casos de grandes reservatórios)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        $(document).ready(function () {
+            $('.tab-btn').click(function () {
+                var tabName = $(this).attr('data-tab');
+                $('.tab-content').hide();
+                $('#' + tabName).fadeIn();
+                $('.tab-btn').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+</body>
+</html>
